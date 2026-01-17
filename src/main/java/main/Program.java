@@ -2,7 +2,7 @@ package main;
 
 import modell.Elelmiszer;
 import modell.Konzerv;
-import modell.LejartElelmiszerException;
+import modell.LejartElelmiszer;
 import modell.Raktar;
 
 import java.time.LocalDate;
@@ -27,7 +27,7 @@ public class Program {
                     "paradicsomgyarto",
                     "ez egy paradicsom konzerv"
             ));
-        } catch (LejartElelmiszerException e) {
+        } catch (LejartElelmiszer e) {
             System.out.println(e.getMessage());
         }
 

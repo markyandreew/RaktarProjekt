@@ -9,10 +9,10 @@ public class Konzerv extends Elelmiszer{
     private String ezaRecept; // lehet null
 
     public Konzerv(String nev, String gyarto, LocalDate lejaratiDatum,
-                   String leiras, String receptFajlNev) {
+                   String leiras, String receptNev) {
         super(nev, gyarto, lejaratiDatum);
         this.leiras = leiras;
-        this.ezaRecept = receptFajlNev;
+        this.ezaRecept = receptNev;
     }
 
     public Konzerv(String nev, String gyarto, String leiras) {

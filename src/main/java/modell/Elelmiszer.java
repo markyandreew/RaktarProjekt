@@ -20,7 +20,7 @@ public abstract class Elelmiszer {
         } else if (lejaratiDatum.isAfter(LocalDate.now())) {
             this.lejaratiDatum = lejaratiDatum;
         } else {
-            throw new LejartElelmiszerException();
+            throw new LejartElelmiszer();
         }
     }
 
