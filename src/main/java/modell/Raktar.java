@@ -2,9 +2,10 @@ package modell;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Iterator;
 import java.util.List;
 
-public class Raktar {
+public class Raktar implements Iterable<Elelmiszer>  {
 
     private List<Elelmiszer> elelmiszerek = new ArrayList<>();
 
@@ -14,9 +15,11 @@ public class Raktar {
 
     public List<Elelmiszer> getElelmiszerek() {
        return Collections.unmodifiableList(elelmiszerek);
-       // egy yt videóban volt, így jó összegyűjteni?
     }
 
 
-
+    @Override
+    public Iterator<Elelmiszer> iterator() {
+        return elelmiszerek.iterator();
+    }
 }
